@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".kotak").on("dblclick", function() {
+                $(this).toggleClass("merah");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(238, 255, 0);
+            margin: 10px;
+            float: left;
+        }
+        .merah {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+</body>
+</html>
